@@ -17,15 +17,18 @@ body {
 }
 
 .formulario {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7); /* Color blanco con 70% de opacidad */
     margin-top: 150px;
     padding: 3px;
+    border-radius: 8px; /* Añade esquinas redondeadas para un efecto más agradable */
 }
 
-.h1 {
+.formulario h1 {
     text-align: center;
     color: #1a2537;
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px; 
 }
 
 input[type="text"],

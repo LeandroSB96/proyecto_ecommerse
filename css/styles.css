@@ -160,6 +160,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .container-hero {
   display: flex;
   max-width: 100%;
@@ -10919,6 +10923,7 @@ button.custom-btn {
     font-size: 1.5rem !important;
   }
 }
+
 @media print {
   .d-print-inline {
     display: inline !important;
