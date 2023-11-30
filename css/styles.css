@@ -171,7 +171,8 @@ p {
   background-image: url(/assets/img.hero-banner/banner-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
+  align-items: center;
 }
 
 .container-hero .warp {
@@ -179,27 +180,39 @@ p {
   margin: 0 auto;
   height: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: left;
+  flex-direction: column; /* Apilar elementos verticalmente */
+  justify-content: center; /* Centrar verticalmente todo el contenido */
+  padding: 20px; /* Añadir espacio alrededor del texto */
+  box-sizing: border-box; /* Incluir el relleno en el ancho total */
 }
 
 .container-hero .warp .box {
-   flex-basis: 50%;
-   color: #fff;
-   text-align: left;
-   align-self: center;
+  flex-basis: 50%;
+  color: #fff;
+  text-align: left;
+  align-self: center;
 }
 
 .container-hero .warp .box h1 {
-   font-size: 32px;
-   line-height: .9;
-   padding-bottom: 10px;
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .container-hero .warp .box p {
-   font-size: 15px;
-   line-height: 1.2;
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin: 0; /* Quitar el margen predeterminado de los párrafos */
 }
+
+@media screen and (max-width: 768px) {
+  .container-hero .warp {
+    text-align: left; 
+    margin-top: 50px; 
+  }
+}
+
+
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
@@ -3835,9 +3848,11 @@ textarea.form-control-lg {
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
   color: var(--bs-navbar-active-color);
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar-nav .dropdown-menu {
   position: static;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-text {
@@ -4202,10 +4217,10 @@ textarea.form-control-lg {
 .custom-btn {
   display: flex;
   align-items: center;
-  position: relative; /* Agrega posición relativa al contenedor */
+  position: relative; 
   background: none;
   border: none;
-  color: #212529; /* Cambia el color del texto según tus preferencias */
+  color: #212529;
   cursor: pointer;
 }
 
@@ -4215,8 +4230,8 @@ textarea.form-control-lg {
 
 #carritoContador {
   position: absolute; /* Posición absoluta para posicionar el contador */
-  top: -8px; /* Ajusta la posición vertical según sea necesario */
-  right: -8px; /* Ajusta la posición horizontal según sea necesario */
+  top: -8px; 
+  right: -8px; 
   width: 20px; /* Ancho del contador */
   height: 20px; /* Altura del contador */
   line-height: 20px; /* Ajusta el alto de línea para centrar el texto */
@@ -5604,6 +5619,13 @@ textarea.form-control-lg {
   }
   .modal-fullscreen-xxl-down .modal-body {
     overflow-y: auto;
+  }
+
+  .payment-methods img {
+    width: 50px; /* ajusta el tamaño según sea necesario */
+    height: auto; /* esto asegura que la proporción original se mantenga */
+    margin: 5px; /* opcional: agrega un margen entre las imágenes */
+
   }
 
 /* Estilo de los iconos de redes sociales */
