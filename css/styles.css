@@ -221,7 +221,7 @@ p {
 
 .container-hero .warp .box h1,
 .container-hero .warp .box p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tus preferencias */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 section.py-3 h2 {
