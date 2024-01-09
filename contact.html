@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/contact.css">
 </head>
+
 <body>
-    
+
     <!-- Navigation bar-->
     <div class="notification-bar">
         <p>¡Envío gratuito en pedidos superiores a $30.000!</p>
@@ -36,7 +38,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
@@ -94,8 +97,9 @@
             </div>
         </div>
         </div>
-    </nav> 
-
+    </nav>
+     
+     <!-- Contact-->
     <section id="contacto" class="py-5">
         <div class="container">
             <div class="row">
@@ -105,18 +109,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-10 mx-auto formulario-con-imagen">
                     <form id="contactForm" name="sentMessage" novalidate="novalidate">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="nombre" type="text" placeholder="Nombre" required="required" />
+                                    <input class="form-control" id="nombre" type="text" placeholder="Nombre"
+                                        required="required" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Email" required="required" />
+                                    <input class="form-control" id="email" type="email" placeholder="Email"
+                                        required="required" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -124,117 +130,131 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="telefono" type="tel" placeholder="Teléfono opcional" />
+                                    <input class="form-control" id="telefono" type="tel"
+                                        placeholder="Teléfono opcional" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" id="mensaje" placeholder="Mensaje opcional" required="required"></textarea>
+                                    <textarea class="form-control" id="mensaje" placeholder="Mensaje opcional"
+                                        required="required"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="text-center">
+                        <div class="text-center" style="margin-top: 20px; margin-bottom: 30px;">
                             <div id="success"></div>
-                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar mensaje</button>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton"
+                                type="submit">Enviar mensaje</button>
                         </div>
+                        <div class="imagen-formulario"></div>
                     </form>
                     <br>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.9364897790724!2d-57.60471282457971!3d-37.97861144347662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d8e334d5b4f5%3A0x20a422357660b5b7!2sLuciano%20Arru%C3%A9%202318%2C%20B7606IVV%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1704701340078!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
     
-   <!-- Footer-->
-   <footer class="py-5 bg-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <form>
-                    <label for="email" id="footer-text" class="text-white">Enterate de nuestros dsescuentos, sorteos
-                        y lo nuevo!!</label>
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico">
-                    <button type="submit" id="subscribe-btn" class="btn btn-outline-light">
-                        <i class="bi bi-envelope-fill"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="h3 text-center text-white">Contáctanos</h4>
-                <p class="text-center text-white">
-                    <i class="bi bi-telephone-fill"></i> 2235414909
-                </p>
-                <p class="text-center text-white">
-                    <i class="bi bi-envelope-fill"></i> kikashowroom@gmail.com
-                </p>
-                <p class="text-center text-white">
-                    <i class="bi bi-geo-alt-fill"></i> Arrué 2318. Mar del Plata
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="h3 text-center text-white">Nuestras redes</h4>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
-                                class="bi bi-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/" target="_blank" class="text-white"><i
-                                class="bi bi-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
-                                class="bi bi-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://web.whatsapp.com/" target="_blank" class="text-white"><i
-                                class="bi bi-whatsapp"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="h3 text-center text-white">Métodos de Pago</h4>
-                <div class="payment-methods text-center">
-                    <img src="/assets/img.pagos/visa-logo-6F4057663D-seeklogo.com.png" alt="Método de Pago 1">
-                    <img src="/assets/img.pagos/MasterCard-Logotipo-1996-2016.jpg" alt="Método de Pago 2">
-                    <img src="/assets/img.pagos/naranja-logo-vector.png" alt="Método de Pago3">
-                    <img src="/assets/img.pagos/american_express_logo_wordmark_detail.png" alt="Método de Pago 4">
-                    <img src="/assets/img.pagos/logo-mercadopago.jpg" alt="Método de Pago 5">
-                    <img src="/assets/img.pagos/Banelco_4.jpg" alt="Método de Pago 6">
-                    <img src="/assets/img.pagos/pago-facil-768x480.png" alt="Método de Pago 7">
-                    <img src="/assets/img.pagos/211201035727_rapipago-logo.jpg" alt="Método de Pago 8">
+    <br>
+    <div>
+        <h2 class="sub">¿Cómo llegar?</h2>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.9364897790724!2d-57.60471282457971!3d-37.97861144347662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d8e334d5b4f5%3A0x20a422357660b5b7!2sLuciano%20Arru%C3%A9%202318%2C%20B7606IVV%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1704701340078!5m2!1ses!2sar"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <form>
+                        <label for="email" id="footer-text" class="text-white">Enterate de nuestros dsescuentos, sorteos
+                            y lo nuevo!!</label>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                        <button type="submit" id="subscribe-btn" class="btn btn-outline-light">
+                            <i class="bi bi-envelope-fill"></i>
+                        </button>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <h4 class="h3 text-center text-white">Envíos</h4>
-                    <div class="shipping-methods text-center">
-                        <img src="/assets/img.envios/MercadoEnvios1200.jpg" alt="Método de Envío 1">
-                        <img src="/assets/img.envios/download.png" alt="Método de Envío 2">
-                        <img src="/assets/img.envios/logo-andreani.jpg" alt="Método de Envío 3">
-                        <img src="/assets/img.envios/table@2x.png" alt="Método de Envío 4">
+                    <h4 class="h3 text-center text-white">Contáctanos</h4>
+                    <p class="text-center text-white">
+                        <i class="bi bi-telephone-fill"></i> 2235414909
+                    </p>
+                    <p class="text-center text-white">
+                        <i class="bi bi-envelope-fill"></i> kikashowroom@gmail.com
+                    </p>
+                    <p class="text-center text-white">
+                        <i class="bi bi-geo-alt-fill"></i> Arrué 2318. Mar del Plata
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4 class="h3 text-center text-white">Nuestras redes</h4>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://web.whatsapp.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4 class="h3 text-center text-white">Métodos de Pago</h4>
+                    <div class="payment-methods text-center">
+                        <img src="/assets/img.pagos/visa-logo-6F4057663D-seeklogo.com.png" alt="Método de Pago 1">
+                        <img src="/assets/img.pagos/MasterCard-Logotipo-1996-2016.jpg" alt="Método de Pago 2">
+                        <img src="/assets/img.pagos/naranja-logo-vector.png" alt="Método de Pago3">
+                        <img src="/assets/img.pagos/american_express_logo_wordmark_detail.png" alt="Método de Pago 4">
+                        <img src="/assets/img.pagos/logo-mercadopago.jpg" alt="Método de Pago 5">
+                        <img src="/assets/img.pagos/Banelco_4.jpg" alt="Método de Pago 6">
+                        <img src="/assets/img.pagos/pago-facil-768x480.png" alt="Método de Pago 7">
+                        <img src="/assets/img.pagos/211201035727_rapipago-logo.jpg" alt="Método de Pago 8">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h4 class="h3 text-center text-white">Envíos</h4>
+                        <div class="shipping-methods text-center">
+                            <img src="/assets/img.envios/MercadoEnvios1200.jpg" alt="Método de Envío 1">
+                            <img src="/assets/img.envios/download.png" alt="Método de Envío 2">
+                            <img src="/assets/img.envios/logo-andreani.jpg" alt="Método de Envío 3">
+                            <img src="/assets/img.envios/table@2x.png" alt="Método de Envío 4">
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <p id="copyright" class="m-0 text-center text-white"></p>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <p id="copyright" class="m-0 text-center text-white"></p>
-            </div>
-        </div>
-</footer>
-<!-- Actualizar fecha con JS-->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var currentYear = new Date().getFullYear();
-        document.getElementById("copyright").innerHTML = "Copyright &copy; Kika Showroom " + currentYear;
-    });
-</script>
+    </footer>
+    <!-- Actualizar fecha con JS-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentYear = new Date().getFullYear();
+            document.getElementById("copyright").innerHTML = "Copyright &copy; Kika Showroom " + currentYear;
+        });
+    </script>
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 
 
 
 </body>
+
 </html>
