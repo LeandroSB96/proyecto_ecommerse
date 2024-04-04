@@ -5651,7 +5651,7 @@ textarea.form-control-lg {
   .modal-fullscreen-xxl-down .modal-body {
     overflow-y: auto;
   }
-
+  
   .payment-methods img,
 .shipping-methods img {
     width: 50px;
@@ -5667,8 +5667,6 @@ textarea.form-control-lg {
 .shipping-methods img:not(:last-child) {
     margin-right: 5px;
 }
-
-
 /* Estilo de los iconos de redes sociales */
 ul.list-inline {
   padding: 0;
@@ -11033,16 +11031,21 @@ button.custom-btn {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/assets/img.contact/pexels-ron-lach-9594677.jpg') center/cover no-repeat;
+    background: url('/proyecto_ecommerse/assets/img.contact/pexels-ron-lach-9594677.jpg') center/cover no-repeat;
     z-index: -1;
-    opacity: 0.7; /* Ajusta la opacidad según tu preferencia */
+    opacity: 0.7; 
 }
 
 #contacto h2,
 #contacto p {
-    color: #fff; /* Establece el color del texto a blanco */
+    color: #fff; 
     z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombreado al texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+#contacto .contacto-info {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 #contacto h2 {
@@ -11084,7 +11087,7 @@ button.custom-btn {
 }
 
 h2.sub {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: bold !important;
     font-weight: 200;
     margin-bottom: 10px;
