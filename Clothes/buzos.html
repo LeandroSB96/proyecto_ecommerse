@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,349 +15,367 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/proyecto_ecommerse/css/Clothes/buzos.css">
 </head>
+
 <body>
-    
- <!-- Navigation bar-->
- <div class="notification-bar">
-    <p>¡Envío gratuito en pedidos superiores a $50.000!</p>
-</div>
 
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#">
-            <img src="/proyecto_ecommerse/assets/img-logo/kika png.png" alt="Logo de Kika Showroom"
-                class="logo-img">
-            Kika Showroom
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page"
-                        href="/proyecto_ecommerse/index.html">Inicio</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/remeras.html">Remeras</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/bodys.html">Top/Body</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="#!">Vestidos</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="#!">Abrigos</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/buzos.html">Buzos</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/shorts.html">Shorts</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/jeans.html">Jeans</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/proyecto_ecommerse/contact.html">Contacto</a></li>
-            </ul>
-            <div class="custom-search">
-                <input type="text" placeholder="¿Qué estás buscando?">
-                <button type="button">
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
-            <button id="carritoBtn" class="custom-btn ml-3" type="button">
-                <i class="bi-cart-fill d-block"></i>
-                <span class="text">Carrito</span>
-                <span id="carritoContador" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-            </button>
-            <a href="/proyecto_ecommerse/login.html" class="no-underline">
-                <button class="custom-btn ml-3" type="submit">
-                    <i class="bi bi-person-fill d-block"></i>
-                    <span class="text">Iniciar Sesión</span>
-                </button>
+    <!-- Navigation bar-->
+    <div class="notification-bar">
+        <p>¡Envío gratuito en pedidos superiores a $50.000!</p>
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#">
+                <img src="/proyecto_ecommerse/assets/img-logo/kika png.png" alt="Logo de Kika Showroom"
+                    class="logo-img">
+                Kika Showroom
             </a>
-        </div>
-    </div>
-    </div>
-</nav>
-
-<!-- Section -->
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <!-- Producto 1 -->
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Imagen del producto -->
-                    <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Jeans/Jeans cargo d.jpg" alt="pantalon cargo"
-                         />
-                    <!-- Detalles del producto -->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Nombre del producto -->
-                            <h5 class="fw-bolder">Pantalón Jean Cargo Azul</h5>
-                            <!-- Precio del producto -->
-                            <span class="fw-bold">$13.310</span>
-                            <!-- Cuotas -->
-                            <div>
-                                <span style="opacity: 0.7;">3 cuotas sin interés de <b>$4.436,67</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Acciones del producto -->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al
-                                carrito</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 2 -->
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Imagen del producto -->
-                    <img class="card-img-top"
-                        src="/proyecto_ecommerse/assets/img-store/Jeans/Jeans cargo de talle alto con bolsillo con solapa.jpg"
-                        alt="Cargo talle alto" />
-                    <!-- Detalles del producto -->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Nombre del producto -->
-                            <h5 class="fw-bolder">Jean cargo talle alto</h5>
-                            <!-- Precio del producto -->
-                            <span class="fw-bold">$10.750</span>
-                            <!-- Cuotas -->
-                            <div>
-                                <span style="opacity: 0.7;">3 cuotas sin interés de <b>$3.583,33</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Acciones del producto -->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al
-                                carrito</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Imagen del producto -->
-                    <img class="card-img-top"
-                        src="/proyecto_ecommerse/assets/img-store/Jeans/Jeans de talle alto con bolsillo lateral.jpg"
-                        alt="Jean con bolsillo grande" />
-                    <!-- Detalles del producto -->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Nombre del producto -->
-                            <h5 class="fw-bolder">Jean t.Alto con bolsillo lateral</h5>
-                            <!-- Precio del producto -->
-                            <span class="fw-bold">$13.500</span>
-                            <!-- Cuotas -->
-                            <div>
-                                <span style="opacity: 0.7;">3 cuotas sin interés de <b>$4.250,00</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Acciones del producto -->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al
-                                carrito</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 4 -->
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Sale badge -->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                    </div>
-                    <!-- Imagen del producto -->
-                    <img class="card-img-top"
-                        src="/proyecto_ecommerse/assets/img-store/Jeans/Vaqueros cargo de talle alto con bolsillo con solapa.jpg"
-                        alt="vaquero cargo" />
-                    <!-- Detalles del producto -->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Nombre del producto -->
-                            <h5 class="fw-bolder">Vaquero cargo tiro alto</h5>
-                            <!-- Precio del producto -->
-                            <span class="text-muted text-decoration-line-through">$20.000</span>
-                            <span class="fw-bold">$15.000</span>
-                        </div>
-                    </div>
-                    <!-- Acciones del producto -->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al
-                                Carrito</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 5 -->
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Sale badge -->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                    </div>
-                    <!-- Imagen del producto -->
-                    <img class="card-img-top"
-                        src="/proyecto_ecommerse/assets/img-store/Jeans/c661fbbe2acef8cc9449a182627bf9cf.jpg"
-                        alt="Remera Marron claro" />
-                    <!-- Detalles del producto -->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Nombre del producto -->
-                            <h5 class="fw-bolder">Jean Claro</h5>
-                            <!-- Precio del producto -->
-                            <span class="text-muted text-decoration-line-through">$20.000</span>
-                            <span class="fw-bold">$15.000</span>
-                        </div>
-                    </div>
-                    <!-- Acciones del producto -->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al
-                                Carrito</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Sección de Información -->
-<section class="nav-info">
-    <div class="nav-img">
-        <i class="bi bi-credit-card"></i>
-        <div>
-            <h5>3 CUOTAS SIN INTERES CON TODAS LAS TARJETAS BANCARIAS</h5>
-            <span>No te lo Pierdas !</span>
-        </div>
-    </div>
-    <div class="nav-img">
-        <i class="bi bi-bag-check"></i>
-        <div>
-            <h5>10% OFF CON TRANSFERENCIA</h5>
-            <span>No te Olvides de Enviarnos el Comprobante! </span>
-        </div>
-    </div>
-    <div class="nav-img">
-        <i class="bi bi-truck"></i>
-        <div>
-            <h5>ENVÍOS GRATIS A TODO EL PAIS</h5>
-            <span>para compras desde $50000</span>
-        </div>
-    </div>
-</section>
-
-<!-- Footer-->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <form>
-                    <label for="email" id="footer-text" class="text-white">Enterate de nuestros dsescuentos, sorteos
-                        y lo nuevo!!</label>
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico">
-                    <button type="submit" id="subscribe-btn" class="btn btn-outline-light">
-                        <i class="bi bi-envelope-fill"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="h3 text-center text-white">Contáctanos</h4>
-                <p class="text-center text-white">
-                    <i class="bi bi-telephone-fill"></i> 2235414909
-                </p>
-                <p class="text-center text-white">
-                    <i class="bi bi-envelope-fill"></i> kikashowroom@gmail.com
-                </p>
-                <p class="text-center text-white">
-                    <i class="bi bi-geo-alt-fill"></i> Arrué 2318. Mar del Plata
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="h3 text-center text-white">Nuestras redes</h4>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
-                                class="bi bi-facebook"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="/proyecto_ecommerse/index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/remeras.html">Remeras</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/bodys.html">Top/Body</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Vestidos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Abrigos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/buzos.html">Buzos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/shorts.html">Shorts</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="/proyecto_ecommerse/Clothes/jeans.html">Jeans</a></li>
+                        </ul>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/" target="_blank" class="text-white"><i
-                                class="bi bi-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
-                                class="bi bi-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://web.whatsapp.com/" target="_blank" class="text-white"><i
-                                class="bi bi-whatsapp"></i></a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/proyecto_ecommerse/contact.html">Contacto</a></li>
                 </ul>
+                <div class="custom-search">
+                    <input type="text" placeholder="¿Qué estás buscando?">
+                    <button type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <button id="carritoBtn" class="custom-btn ml-3" type="button">
+                    <i class="bi-cart-fill d-block"></i>
+                    <span class="text">Carrito</span>
+                    <span id="carritoContador" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+                <a href="/proyecto_ecommerse/login.html" class="no-underline">
+                    <button class="custom-btn ml-3" type="submit">
+                        <i class="bi bi-person-fill d-block"></i>
+                        <span class="text">Iniciar Sesión</span>
+                    </button>
+                </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="h3 text-center text-white">Métodos de Pago</h4>
-                <div class="payment-methods text-center">
-                    <img src="/proyecto_ecommerse/assets/img.pagos/visa-logo-6F4057663D-seeklogo.com.png"
-                        alt="Método de Pago 1">
-                    <img src="/proyecto_ecommerse/assets/img.pagos/MasterCard-Logotipo-1996-2016.jpg"
-                        alt="Método de Pago 2">
-                    <img src="/proyecto_ecommerse/assets/img.pagos/naranja-logo-vector.png" alt="Método de Pago3">
-                    <img src="/proyecto_ecommerse//assets/img.pagos/american_express_logo_wordmark_detail.png"
-                        alt="Método de Pago 4">
-                    <img src="/proyecto_ecommerse//assets/img.pagos/logo-mercadopago.jpg" alt="Método de Pago 5">
-                    <img src="/proyecto_ecommerse//assets/img.pagos/Banelco_4.jpg" alt="Método de Pago 6">
-                    <img src="/proyecto_ecommerse//assets/img.pagos/pago-facil-768x480.png" alt="Método de Pago 7">
-                    <img src="/proyecto_ecommerse//assets/img.pagos/211201035727_rapipago-logo.jpg"
-                        alt="Método de Pago 8">
+        </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- Producto 1 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge -->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Imagen del producto -->
+                        <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Buzos/buzo bob.jpg" alt="Buzo Bob esponja" />
+                        <!-- Detalles del producto -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Nombre del producto -->
+                                <h5 class="fw-bolder">Buzo Bob Esponja</h5>
+                                <!-- Precio del producto -->
+                                <span class="text-muted text-decoration-line-through">$20.000</span>
+                                <b>$18.000</b>
+                                <br>
+                                <!-- Cuotas -->
+                                <div>
+                                    <span style="opacity: 0.7;">3 cuotas sin interés de <b>$4.250,00</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Acciones del producto -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Producto 2 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Imagen del producto -->
+                        <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Buzos/buzo patricio.jpg" alt="Buzo Patricio Estrella" />
+                        <!-- Detalles del producto -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Nombre del producto -->
+                                <h5 class="fw-bolder">Buzo Patricio Estrella</h5>
+                                <!-- Precio del producto -->
+                                <span class="fw-bold">$10.750</span>
+                                <!-- Cuotas -->
+                                <div>
+                                    <span style="opacity: 0.7;">3 cuotas sin interés de <b>$3.583,33</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Acciones del producto -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Producto 3 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Imagen del producto -->
+                        <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Buzos/buzo negro.jpg" alt="Buzo negro estampado" />
+                        <!-- Detalles del producto -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Nombre del producto -->
+                                <h5 class="fw-bolder">Buzo Negro Estampado</h5>
+                                <!-- Precio del producto -->
+                                <span class="fw-bold">$13.500</span>
+                                <!-- Cuotas -->
+                                <div>
+                                    <span style="opacity: 0.7;">3 cuotas sin interés de <b>$4.250,00</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Acciones del producto -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Producto 4 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge -->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Imagen del producto -->
+                        <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Buzos/buzo snoopy.jpg" alt="Buzo Snoopy" />
+                        <!-- Detalles del producto -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Nombre del producto -->
+                                <h5 class="fw-bolder">Buzo Snoopy Lila</h5>
+                                <!-- Precio del producto -->
+                                <span class="text-muted text-decoration-line-through">$20.000</span>
+                                <span class="fw-bold">$15.000</span>
+                                <!-- Cuotas -->
+                                <div>
+                                    <span style="opacity: 0.7;">3 cuotas sin interés de <b>$4.550,00</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Acciones del producto -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Producto 5 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Imagen del producto -->
+                        <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Buzos/brazt 2.jpg" alt="Buzo Blanco Bratz" />
+                        <!-- Detalles del producto -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Nombre del producto -->
+                                <h5 class="fw-bolder">Buzo Blanco Bratz</h5>
+                                <!-- Precio del producto -->
+                                $23.000
+                                <!-- Cuotas -->
+                                <div>
+                                    <span style="opacity: 0.7;">3 cuotas sin interés de <b>$4.550,00</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Acciones del producto -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Producto 6 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Imagen del producto -->
+                        <img class="card-img-top" src="/proyecto_ecommerse/assets/img-store/Buzos/f41ac6a854a5a8551e01a4f21e4bca2c.jpg" alt="Buzo Rana" />
+                        <!-- Detalles del producto -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Nombre del producto -->
+                                <h5 class="fw-bolder">Buzo Rana Lila</h5>
+                                <!-- Precio del producto -->
+                                $22.000
+                                <!-- Cuotas -->
+                                <div>
+                                    <span style="opacity: 0.7;">3 cuotas sin interés de <b>$3.550,00</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Acciones del producto -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Sección de Información -->
+    <section class="nav-info">
+        <div class="nav-img">
+            <i class="bi bi-credit-card"></i>
+            <div>
+                <h5>3 CUOTAS SIN INTERES CON TODAS LAS TARJETAS BANCARIAS</h5>
+                <span>No te lo Pierdas !</span>
+            </div>
+        </div>
+        <div class="nav-img">
+            <i class="bi bi-bag-check"></i>
+            <div>
+                <h5>10% OFF CON TRANSFERENCIA</h5>
+                <span>No te Olvides de Enviarnos el Comprobante! </span>
+            </div>
+        </div>
+        <div class="nav-img">
+            <i class="bi bi-truck"></i>
+            <div>
+                <h5>ENVÍOS GRATIS A TODO EL PAIS</h5>
+                <span>para compras desde $50000</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <form>
+                        <label for="email" id="footer-text" class="text-white">Enterate de nuestros dsescuentos, sorteos
+                            y lo nuevo!!</label>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                        <button type="submit" id="subscribe-btn" class="btn btn-outline-light">
+                            <i class="bi bi-envelope-fill"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4 class="h3 text-center text-white">Contáctanos</h4>
+                    <p class="text-center text-white">
+                        <i class="bi bi-telephone-fill"></i> 2235414909
+                    </p>
+                    <p class="text-center text-white">
+                        <i class="bi bi-envelope-fill"></i> kikashowroom@gmail.com
+                    </p>
+                    <p class="text-center text-white">
+                        <i class="bi bi-geo-alt-fill"></i> Arrué 2318. Mar del Plata
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4 class="h3 text-center text-white">Nuestras redes</h4>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://web.whatsapp.com/" target="_blank" class="text-white"><i
+                                    class="bi bi-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4 class="h3 text-center text-white">Métodos de Pago</h4>
+                    <div class="payment-methods text-center">
+                        <img src="/proyecto_ecommerse/assets/img.pagos/visa-logo-6F4057663D-seeklogo.com.png"
+                            alt="Método de Pago 1">
+                        <img src="/proyecto_ecommerse/assets/img.pagos/MasterCard-Logotipo-1996-2016.jpg"
+                            alt="Método de Pago 2">
+                        <img src="/proyecto_ecommerse/assets/img.pagos/naranja-logo-vector.png" alt="Método de Pago3">
+                        <img src="/proyecto_ecommerse//assets/img.pagos/american_express_logo_wordmark_detail.png"
+                            alt="Método de Pago 4">
+                        <img src="/proyecto_ecommerse//assets/img.pagos/logo-mercadopago.jpg" alt="Método de Pago 5">
+                        <img src="/proyecto_ecommerse//assets/img.pagos/Banelco_4.jpg" alt="Método de Pago 6">
+                        <img src="/proyecto_ecommerse//assets/img.pagos/pago-facil-768x480.png" alt="Método de Pago 7">
+                        <img src="/proyecto_ecommerse//assets/img.pagos/211201035727_rapipago-logo.jpg"
+                            alt="Método de Pago 8">
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                    <h4 class="h3 text-center text-white">Envíos</h4>
-                    <div class="shipping-methods text-center">
-                        <img src="/proyecto_ecommerse//assets/img.envios/MercadoEnvios1200.jpg"
-                            alt="Método de Envío 1">
-                        <img src="/proyecto_ecommerse//assets/img.envios/download.png" alt="Método de Envío 2">
-                        <img src="/proyecto_ecommerse//assets/img.envios/logo-andreani.jpg" alt="Método de Envío 3">
-                        <img src="/proyecto_ecommerse//assets/img.envios/table@2x.png" alt="Método de Envío 4">
-                        <img src="/proyecto_ecommerse/assets/img.envios/branch@2x.png" alt="Método de envio 5">
+                        <h4 class="h3 text-center text-white">Envíos</h4>
+                        <div class="shipping-methods text-center">
+                            <img src="/proyecto_ecommerse//assets/img.envios/MercadoEnvios1200.jpg"
+                                alt="Método de Envío 1">
+                            <img src="/proyecto_ecommerse//assets/img.envios/download.png" alt="Método de Envío 2">
+                            <img src="/proyecto_ecommerse//assets/img.envios/logo-andreani.jpg" alt="Método de Envío 3">
+                            <img src="/proyecto_ecommerse//assets/img.envios/table@2x.png" alt="Método de Envío 4">
+                            <img src="/proyecto_ecommerse/assets/img.envios/branch@2x.png" alt="Método de envio 5">
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <p id="copyright" class="m-0 text-center text-white"></p>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <p id="copyright" class="m-0 text-center text-white"></p>
-            </div>
-        </div>
-</footer>
-<!-- Actualizar fecha con JS-->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var currentYear = new Date().getFullYear();
-        document.getElementById("copyright").innerHTML = "Copyright &copy; Kika Showroom " + currentYear;
-    });
-</script>
+    </footer>
+    <!-- Actualizar fecha con JS-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentYear = new Date().getFullYear();
+            document.getElementById("copyright").innerHTML = "Copyright &copy; Kika Showroom " + currentYear;
+        });
+    </script>
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
