@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -17,31 +18,41 @@
     <link rel="stylesheet" href="/proyecto_ecommerse/css/register.css">
     <title>Registrate</title>
 </head>
-<body>
-    
-<form class="formulario">
-    <h1>Registrate</h1>
-    <div class="contenedor">
-        <div class="input-contenedor">
-            <i class="bi bi-person-fill icon"></i>
-            <input type="text" placeholder="Nombre Completo">
 
+<body>
+
+    <form class="formulario" id="registerForm" method="POST">
+        <h1>Registrate</h1>
+        <div class="contenedor">
             <div class="input-contenedor">
-                <i class="bi bi-envelope-fill icon"></i>
-                <input type="text" placeholder="Correo Electrónico">
+                <i class="bi bi-person-fill icon"></i>
+                <input type="text" id="fullName" name="fullName" placeholder="Nombre Completo">
+                <span id="fullNameError" class="error"></span>
+
 
                 <div class="input-contenedor">
-                    <i class="bi bi-lock-fill icon"></i>
-                    <input type="password" placeholder="Contraseña">    
+                    <i class="bi bi-envelope-fill icon"></i>
+                    <input type="text" id="emailRegister" name="email" placeholder="Correo Electrónico">
+                    <span id="emailError" class="error"></span>
 
-        </div>
 
-        <input type="submit" value="Registrate" class="button">
-         <p><strong>Al registrarte, aceptas nuestras Condiciones de uso y Política de provacidad</strong></p>
-         <p>¿Ya tienes una cuenta?</p>
-         <p><a class="link" href="/proyecto_ecommerse/login.html">Ingresar</a></p>
-    </div>
-</form>
+                    <div class="input-contenedor">
+                        <i class="bi bi-lock-fill icon"></i>
+                        <input type="password" id="passwordRegister" name="password" placeholder="Contraseña">
+                        <span id="passwordError" class="error"></span>
+
+
+                    </div>
+
+                    <input type="submit" value="Registrate" class="button">
+                    <p><strong>Al registrarte, aceptas nuestras Condiciones de uso y Política de provacidad</strong></p>
+                    <p>¿Ya tienes una cuenta?</p>
+                    <p><a class="link" href="/proyecto_ecommerse/login.html">Ingresar</a></p>
+                </div>
+    </form>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

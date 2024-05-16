@@ -3830,6 +3830,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar > .container,
 .navbar > .container-fluid,

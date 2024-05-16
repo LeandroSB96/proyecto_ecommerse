@@ -21,17 +21,19 @@
 
 <body>
 
-    <form class="formulario">
+    <form class="formulario" id="loginForm" method="POST">
         <h1>Iniciar Sesión</h1>
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="bi bi-envelope-fill icon"></i>
-                <input type="text" placeholder="Correo Electrónico">
+                <input type="text" id="emailLogin" name= "email" placeholder="Correo Electrónico">
+                <span id="emailError" class="error"></span>
+
 
                 <div class="input-contenedor">
                     <i class="bi bi-lock-fill icon"></i>
-                    <input type="password" placeholder="Contraseña">
-
+                    <input type="password" id="passwordLogin" name="password" placeholder="Contraseña">
+                    <span id="passwordError" class="error"></span>
                 </div>
 
                 <input type="submit" value="Iniciar Sesión" class="button">
@@ -40,6 +42,8 @@
                 <p><a class="link" href="/proyecto_ecommerse/index.html">Página principal</a></p>
             </div>
     </form>
+
+    <script src="script.js"></script>
 
 </body>
 
