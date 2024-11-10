@@ -79,6 +79,22 @@ p {
     color: cadetblue;
 }
 
+.input-contenedor {
+    margin-bottom: 20px; 
+}
+
+.error {
+    display: block; 
+    margin-top: 5px; 
+    color: #ff1028; 
+}
+
+.success {
+    display: block; 
+    margin-top: 5px; 
+    color: #089429; 
+}
+
 @media(min-width:768px) {
 }
 

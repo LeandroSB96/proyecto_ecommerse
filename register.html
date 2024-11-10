@@ -22,36 +22,32 @@
 <body>
 
     <form class="formulario" id="registerForm" method="POST">
-        <h1>Registrate</h1>
+        <h1>Regístrate</h1>
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="bi bi-person-fill icon"></i>
-                <input type="text" id="fullName" name="fullName" placeholder="Nombre Completo">
-                <span id="fullNameError" class="error"></span>
-
-
-                <div class="input-contenedor">
-                    <i class="bi bi-envelope-fill icon"></i>
-                    <input type="text" id="emailRegister" name="email" placeholder="Correo Electrónico">
-                    <span id="emailError" class="error"></span>
-
-
-                    <div class="input-contenedor">
-                        <i class="bi bi-lock-fill icon"></i>
-                        <input type="password" id="passwordRegister" name="password" placeholder="Contraseña">
-                        <span id="passwordError" class="error"></span>
-
-
-                    </div>
-
-                    <input type="submit" value="Registrate" class="button">
-                    <p><strong>Al registrarte, aceptas nuestras Condiciones de uso y Política de provacidad</strong></p>
-                    <p>¿Ya tienes una cuenta?</p>
-                    <p><a class="link" href="/proyecto_ecommerse/login.html">Ingresar</a></p>
-                </div>
+                <input type="text" id="fullName" name="fullName" placeholder="Nombre Completo" required>
+                <span id="fullNameError" class="error"></span> <!-- Mensaje de error -->
+            </div>
+            <div class="input-contenedor">
+                <i class="bi bi-envelope-fill icon"></i>
+                <input type="text" id="emailRegister" name="email" placeholder="Correo Electrónico" required>
+                <span id="emailError" class="error"></span> <!-- Mensaje de error -->
+            </div>
+            <div class="input-contenedor">
+                <i class="bi bi-lock-fill icon"></i>
+                <input type="password" id="passwordRegister" name="password" placeholder="Contraseña" required>
+                <span id="passwordError" class="error"></span> <!-- Mensaje de error -->
+            </div>
+            <input type="submit" value="Regístrate" class="button">
+            <p><strong>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</strong></p>
+            <p>¿Ya tienes una cuenta?</p>
+            <p><a class="link" href="/proyecto_ecommerse/login.html">Ingresar</a></p>
+        </div>
     </form>
+    
 
-    <script src="script.js"></script>
+    <script src="/proyecto_ecommerse/js/registro.js"></script>
 
 </body>
 
